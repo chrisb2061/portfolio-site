@@ -1,0 +1,273 @@
+$header-color: #161d24;
+$lato: 'Lato', sans-serif;
+$white-text: #f2f2f2;
+$lighter-white-text: #fafafa;
+$bg: #f2f2f2;
+$hover: darken($bg, 10%);
+$dark-blue: #111F2C;
+
+body{
+  background-color: $dark-blue;
+}
+
+h1{
+  font-family: $lato;
+  font-weight: 700;
+  color: $white-text;
+
+
+}
+h2{
+  font-family: $lato;
+  font-weight: 300;
+  color: $white-text;
+}
+
+#hamburger{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+
+}
+
+#overlay-nav{
+  background-color: $header-color;
+  opacity: 0.9;
+  z-index:1000;
+  height:0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .closebtn-holder{
+    text-align: left;
+    margin-left: 20px;
+
+
+    .closebtn{
+      font-size: 50px;
+      color: $white-text;
+
+    }
+  }
+  .overlay-text{
+
+    ul li{
+      font-family: $lato;
+      font-weight: 300;
+      font-size: 50px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      list-style-type: none;
+
+      a{
+        color: $white-text;
+      }
+      
+    }
+  }
+
+}
+
+#the-resume{
+  height: 100%;
+  background-color: $white-text;
+  position: fixed;
+  right: 0px;
+  bottom:0;
+  width:100%;
+  z-index: 1;
+  right: -4000px;
+
+
+  .close-resume{
+    font-size: 50px;
+    color: $dark-blue;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+
+  }
+
+  p{
+    margin-bottom: 0px;
+  }
+  h2, p{
+    color: $dark-blue;
+  }
+
+  .resume-font-styles{
+    margin-bottom: 25px;
+    font-family: $lato;
+    .year{
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .italic{
+      font-style: italic;
+    }
+    .title{
+      font-weight: 300;
+      font-size: 20px;
+    }
+    .last-line{
+      font-size: 14px;
+    }
+
+
+  }
+
+
+  #experience{
+    margin-top: 40px;
+    border-left: dotted 1px $dark-blue;
+    margin-bottom: 40px;
+
+
+  }
+
+  #education{
+    margin-top: 40px;
+  }
+}
+
+
+
+#home-index-section{
+  background: url(../img/background2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $dark-blue;
+
+ #view-my-work a {
+   font-family: $lato;
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: $white-text;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+  }
+
+  #view-my-work a:hover,
+  #view-my-work a:focus {
+    outline: none;
+  }
+
+  .cl-effect-14 a {
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .cl-effect-14 a::before,
+  .cl-effect-14 a::after {
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0.2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+
+  .cl-effect-14 a::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
+  .cl-effect-14 a::after {
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+
+  .cl-effect-14 a:hover::before,
+  .cl-effect-14 a:hover::after,
+  .cl-effect-14 a:focus::before,
+  .cl-effect-14 a:focus::after {
+    opacity: 1;
+  }
+
+  .cl-effect-14 a:hover::before,
+  .cl-effect-14 a:focus::before {
+    left: 50%;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    -moz-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
+    font-weight: 700;
+  }
+
+  .cl-effect-14 a:hover::after,
+  .cl-effect-14 a:focus::after {
+    right: 50%;
+    -webkit-transform: rotate(0deg) translateX(50%);
+    -moz-transform: rotate(0deg) translateX(50%);
+    transform: rotate(0deg) translateX(50%);
+    font-weight: 700;
+  }
+    p{
+      color: #f0f0f0;
+      font-family: $lato;
+      font-weight: 300;
+      font-size: 40px;
+    }
+    h1{
+      color: #f0f0f0;
+      font-family: $lato;
+      font-weight: 700;
+    }
+
+
+}
+
+#about-me-section{
+  position: relative;
+
+  background-color: $dark-blue;
+
+  #the-bio{
+    position: relative;
+  }
+
+  #section-two-header{
+    margin-bottom: 15px;
+  }
+  
+  .stuff{
+    background-color: $white-text;
+    height:300px;
+  }
+  
+  p{
+    color: $white-text;
+  }
+
+
+
+
+}
+
+
