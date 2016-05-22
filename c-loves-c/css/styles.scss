@@ -1,5 +1,10 @@
+
+
 $header-color: #161d24;
 $lato: 'Lato', sans-serif;
+$rockSalt: 'Rock Salt';
+$nothing: 'Nothing You Could Do';
+$laBelle: 'La Belle Aurore';
 $white-text: #f2f2f2;
 $lighter-white-text: #fafafa;
 $bg: #f2f2f2;
@@ -17,27 +22,16 @@ body{
 }
 
 h1{
-  font-family: $lato;
-  font-weight: 300;
-  color: $white-text;
-  margin-bottom:  -21px;
-  font-size: 55px;
-
-
-}
-
-
-h2{
-  font-family: $lato;
-  font-weight: 300;
-  color: $peach;
-}
-
-h3{
-  font-family: $lato;
+  font-family: $nothing;
   font-weight: 400;
-  color: $peach;
+  color: $ivory;
+  font-size: 70px;
+
+
 }
+
+
+
 
 p{
   font-family: $lato;
@@ -94,7 +88,7 @@ p{
 
 }
 
-#home-index{
+#home-index-section{
   background: url(../img/christianandchimere.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -106,10 +100,22 @@ p{
     margin-bottom: 100px;
   }
 
+  h2{
+    font-family: $lato;
+    font-weight: 300;
+    color: $ivory;
+  }
+
+  h3{
+    font-family: $lato;
+    font-weight: 400;
+    color: $ivory;
+  }
+
 
 }
 
-#event-info{
+#event-info-section{
   background-color: $peach;
 
   h2{
@@ -138,7 +144,7 @@ p{
   }
 }
 
-#about-us{
+#about-us-section{
   position: relative;
 
   background-color: $dark-blue;
