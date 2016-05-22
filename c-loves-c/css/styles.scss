@@ -3,9 +3,14 @@ $lato: 'Lato', sans-serif;
 $white-text: #f2f2f2;
 $lighter-white-text: #fafafa;
 $bg: #f2f2f2;
-$hover: darken($bg, 10%);
 $dark-blue: #111F2C;
 $peach: #fd8251;
+
+$ivory: #fffff0;
+$blush: #ead3d0;
+$lighter-gray: #dedbd8;
+$gray: #919191;
+$navy: #3a3d54;
 
 body{
   background-color: $white-text;
@@ -89,71 +94,7 @@ p{
 
 }
 
-#the-resume{
-  height: 100%;
-  background-color: $white-text;
-  position: fixed;
-  right: 0px;
-  bottom:0;
-  width:100%;
-  z-index: 1;
-  right: -4000px;
-
-
-  .close-resume{
-    font-size: 50px;
-    color: $dark-blue;
-    position: absolute;
-    top: -15px;
-    left: 15px;
-
-  }
-
-  p{
-    margin-bottom: 0px;
-  }
-  h2, p{
-    color: $dark-blue;
-  }
-
-  .resume-font-styles{
-    margin-bottom: 25px;
-    font-family: $lato;
-    .year{
-      font-size: 15px;
-      font-weight: 700;
-    }
-    .italic{
-      font-style: italic;
-    }
-    .title{
-      font-weight: 300;
-      font-size: 20px;
-    }
-    .last-line{
-      font-size: 14px;
-    }
-
-
-  }
-
-
-  #experience{
-    margin-top: 40px;
-    border-left: dotted 1px $dark-blue;
-    margin-bottom: 40px;
-
-
-  }
-
-  #education{
-    margin-top: 40px;
-  }
-}
-
-
-
-#home-index-section{
+#home-index{
   background: url(../img/christianandchimere.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -165,103 +106,10 @@ p{
     margin-bottom: 100px;
   }
 
- #view-my-work a {
-   font-family: $lato;
-    position: relative;
-    display: inline-block;
-    margin: 15px 25px;
-    outline: none;
-    color: $white-text;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 300;
-    text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    font-size: 1.35em;
-  }
-
-  #view-my-work a:hover,
-  #view-my-work a:focus {
-    outline: none;
-  }
-
-  .cl-effect-14 a {
-    padding: 0 20px;
-    height: 45px;
-    line-height: 45px;
-  }
-
-  .cl-effect-14 a::before,
-  .cl-effect-14 a::after {
-    position: absolute;
-    width: 45px;
-    height: 2px;
-    background: #fff;
-    content: '';
-    opacity: 0.2;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    pointer-events: none;
-  }
-
-  .cl-effect-14 a::before {
-    top: 0;
-    left: 0;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    transform-origin: 0 0;
-  }
-
-  .cl-effect-14 a::after {
-    right: 0;
-    bottom: 0;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-transform-origin: 100% 0;
-    -moz-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-  }
-
-  .cl-effect-14 a:hover::before,
-  .cl-effect-14 a:hover::after,
-  .cl-effect-14 a:focus::before,
-  .cl-effect-14 a:focus::after {
-    opacity: 1;
-  }
-
-  .cl-effect-14 a:hover::before,
-  .cl-effect-14 a:focus::before {
-    left: 50%;
-    -webkit-transform: rotate(0deg) translateX(-50%);
-    -moz-transform: rotate(0deg) translateX(-50%);
-    transform: rotate(0deg) translateX(-50%);
-    font-weight: 700;
-  }
-
-  .cl-effect-14 a:hover::after,
-  .cl-effect-14 a:focus::after {
-    right: 50%;
-    -webkit-transform: rotate(0deg) translateX(50%);
-    -moz-transform: rotate(0deg) translateX(50%);
-    transform: rotate(0deg) translateX(50%);
-    font-weight: 700;
-  }
-    p{
-      color: #f0f0f0;
-      font-family: $lato;
-      font-weight: 300;
-      font-size: 40px;
-    }
-
-
 
 }
 
-#portfolio-section{
+#event-info{
   background-color: $peach;
 
   h2{
@@ -288,33 +136,24 @@ p{
     margin-bottom: 100px;
 
   }
-
-
 }
 
-#about-me-section{
+#about-us{
   position: relative;
 
   background-color: $dark-blue;
 
-  #the-bio{
 
-  }
 
   #section-two-header{
     margin-bottom: 15px;
   }
-  
 
-  
+
+
   p{
     color: $white-text;
   }
-
-
-
-
-
 }
 
 

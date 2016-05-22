@@ -1,6 +1,14 @@
 
 
 $(document).ready(function() {
+    //init foundation js
+    $(document).foundation();
+    //init the countdown
+    $("#countdown").countdown("2016/09/10", function(event) {
+        $(this).text(
+            event.strftime('%D days %H:%M:%S')
+        );
+    });
 
     var hamburger = $('#hamburger');
     var overlayNav = $('#overlay-nav');
@@ -20,7 +28,7 @@ $(document).ready(function() {
     }
 
     $('#fullpage').fullpage({
-        anchors: ['index', 'about-me', 'portfolio', 'contact-me'],
+        anchors: ['index', 'our-story', 'mr-and-mrs', 'proposal', 'event-info', 'rsvp-registry', 'atlanta'],
         menu: '#menu',
         scrollingSpeed: 1000,
         autoScrolling:false,
