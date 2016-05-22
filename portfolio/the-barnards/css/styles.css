@@ -1,0 +1,206 @@
+body {
+  background-color: #f2f2f2; }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #f2f2f2;
+  margin-bottom: -21px;
+  font-size: 55px; }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #fd8251; }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #fd8251; }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #fd8251;
+  margin-bottom: 0px; }
+
+#hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10; }
+
+#overlay-nav {
+  background-color: #fd8251;
+  opacity: 0.9;
+  z-index: 1000;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #overlay-nav .closebtn-holder {
+    text-align: left;
+    margin-left: 20px; }
+    #overlay-nav .closebtn-holder .closebtn {
+      font-size: 50px;
+      color: #f2f2f2; }
+  #overlay-nav .overlay-text ul li {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    list-style-type: none; }
+    #overlay-nav .overlay-text ul li a {
+      color: #f2f2f2; }
+
+#the-resume {
+  height: 100%;
+  background-color: #f2f2f2;
+  position: fixed;
+  right: 0px;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  right: -4000px; }
+  #the-resume .close-resume {
+    font-size: 50px;
+    color: #111F2C;
+    position: absolute;
+    top: -15px;
+    left: 15px; }
+  #the-resume p {
+    margin-bottom: 0px; }
+  #the-resume h2, #the-resume p {
+    color: #111F2C; }
+  #the-resume .resume-font-styles {
+    margin-bottom: 25px;
+    font-family: "Lato", sans-serif; }
+    #the-resume .resume-font-styles .year {
+      font-size: 15px;
+      font-weight: 700; }
+    #the-resume .resume-font-styles .italic {
+      font-style: italic; }
+    #the-resume .resume-font-styles .title {
+      font-weight: 300;
+      font-size: 20px; }
+    #the-resume .resume-font-styles .last-line {
+      font-size: 14px; }
+  #the-resume #experience {
+    margin-top: 40px;
+    border-left: dotted 1px #111F2C;
+    margin-bottom: 40px; }
+  #the-resume #education {
+    margin-top: 40px; }
+
+#home-index-section {
+  background: url(../img/christianandchimere.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #111F2C; }
+  #home-index-section #logo {
+    margin-bottom: 100px; }
+  #home-index-section #view-my-work a {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #f2f2f2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1.35em; }
+  #home-index-section #view-my-work a:hover,
+  #home-index-section #view-my-work a:focus {
+    outline: none; }
+  #home-index-section .cl-effect-14 a {
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px; }
+  #home-index-section .cl-effect-14 a::before,
+  #home-index-section .cl-effect-14 a::after {
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0.2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none; }
+  #home-index-section .cl-effect-14 a::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  #home-index-section .cl-effect-14 a::after {
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0; }
+  #home-index-section .cl-effect-14 a:hover::before,
+  #home-index-section .cl-effect-14 a:hover::after,
+  #home-index-section .cl-effect-14 a:focus::before,
+  #home-index-section .cl-effect-14 a:focus::after {
+    opacity: 1; }
+  #home-index-section .cl-effect-14 a:hover::before,
+  #home-index-section .cl-effect-14 a:focus::before {
+    left: 50%;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    -moz-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
+    font-weight: 700; }
+  #home-index-section .cl-effect-14 a:hover::after,
+  #home-index-section .cl-effect-14 a:focus::after {
+    right: 50%;
+    -webkit-transform: rotate(0deg) translateX(50%);
+    -moz-transform: rotate(0deg) translateX(50%);
+    transform: rotate(0deg) translateX(50%);
+    font-weight: 700; }
+  #home-index-section p {
+    color: #f0f0f0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 40px; }
+
+#portfolio-section {
+  background-color: #fd8251; }
+  #portfolio-section h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #f2f2f2; }
+  #portfolio-section h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #f2f2f2; }
+  #portfolio-section p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin-bottom: 0px; }
+  #portfolio-section #countdown {
+    margin-bottom: 100px; }
+
+#about-me-section {
+  position: relative;
+  background-color: #111F2C; }
+  #about-me-section #section-two-header {
+    margin-bottom: 15px; }
+  #about-me-section p {
+    color: #f2f2f2; }
+
+/*# sourceMappingURL=styles.css.map */

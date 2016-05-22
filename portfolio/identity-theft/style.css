@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body
+	{
+		background-color: #e3e3e3;
+		width: 100%;
+	}
+a:link {color:#727272; text-decoration: none;}      /* unvisited link */
+a:visited {color:#727272; text-decoration:none;}  /* visited link */
+a:hover {color:#a3a3a3; text-decoration: none;}  /* mouse over link */
+a:active {color:#727272; text-decoration: none;}
+	
+#wrapper
+	{
+		width: 900px;
+		font-family: Arial, Helvetica, sans-serifi;
+		font-size: .8em;
+		margin: 0px auto;
+    	text-align: left;	
+		margin-top: 25px;
+	}
+#logo
+	{
+		background: url(images/logo.png) no-repeat;
+		width: 469px;
+		height: 90px;	
+		margin: 0px auto;
+    	text-align: left;
+		margin-bottom: 40px;
+	}
+#logo span
+	{
+		display: none;	
+	}
+nav
+	{
+		text-align: right;	
+		margin-bottom: 20px;
+	}
+nav a
+	{
+		margin-left: 10px;	
+	}
+	
+#everything
+	{
+		background-color: #1d1d1d;	
+		margin-bottom:30px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #a3a3a3;
+		-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+	}
+
+.frontimg, #trying img
+	{
+		margin: 40px 0 40px 35px;
+			
+	}
+#bothcont
+	{
+		margin-top: 50px;	
+		margin-bottom: 50px;
+	}
+#leftcont, rightcont
+	{
+		float: left;
+		width: 420px;
+		
+			
+	}
+#leftcont
+	{
+		margin-right: 60px;	
+	}
+div h3.heading
+	{
+		
+		margin-bottom: 15px;
+			
+	}
+#everything #scam1, #everything #scam2, #everything #scam3
+	{
+		height: 120px;
+		width: 780px;
+		margin-left:50px;
+		padding-top: 50px;
+		
+	}
+#everything #scam2
+	{
+		height: 160px;	
+	}
+
+#everything #scam1 img, #everything #scam2 img, #everything #scam3 img
+	{
+		float: left;
+		margin-right: 20px;
+		
+	}
+h3.scammy
+	{
+		font-size: 2.2em;
+		color: #ffffff;
+	}
+#everything #scam1 h3, #everything #scam2 h3, #everything #scam3 h3
+	{
+		float: left;	
+	}
+#everything #scam1 p, #everything #scam2 p, #everything #scam3 p
+	{
+		float: left;	
+		width: 650px;	
+	}
+#inline1, #inline2, #inline3, #inline4
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #000000;
+		font-size: 12px;	
+	}
+	
+#vidp
+	{
+		padding-top:15px;
+		padding-left: 35px;
+		font-size: 2.2em;
+			
+	}
+#avoidst ul
+	{
+		margin-left: 55px;
+		margin-top: 20px;
+	}
+#avoidst ul li
+	{
+		margin-bottom: 20px	
+	}
+#avoidst p, #avoidst h3
+	{
+		padding-top: 20px;
+		padding-left: 55px;
+		
+	}
+#avoidst p
+	{
+		width: 700px;	
+	}
+	
+#avoidst h3
+	{
+		font-size: 2.2em;	
+	}
+	
+#inline1 ul li, #inline2 ul li, #inline3 ul li, #inline4 ul li
+	{
+		margin-top:10px;	
+	}

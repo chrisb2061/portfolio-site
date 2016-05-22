@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#wrapper
+	{
+		height: 100%;
+		width: 100%;
+		margin:auto;
+		font-family: Arial, Helvetica, sans-serifi;
+		font-size: .8em;	
+	}
+#navwrapper
+	{
+		background: url(../i/header-bg.gif) repeat-x;
+		width: 100%;
+		height: 201px;
+		
+	}
+	
+#navholder
+	{
+		width: 960px;
+		margin: 0px auto;
+    	text-align: left;	
+	}
+	
+#logo
+	{
+		background: url(../i/logo.png) no-repeat;
+		width: 290px;
+		height: 100px;
+		float: left;
+		margin-top: 60px;
+		margin-right: 100px;
+	}
+#nav1 li
+	{
+		float: left;
+		height: 45px;
+		margin-top: 90px;
+		margin-right: 70px;
+		
+	
+	}
+	
+#headerwrapper
+	{
+		background: url(../i/bg1.png) repeat-x;
+		height: 430px;
+		clear:both;	
+	}
+	
+#headerimg
+	{
+		
+		background: url(../i/houses.png) no-repeat;
+		height: 300px;
+		width: 960px;	
+		margin-left: auto;
+		margin-right: auto;
+    	text-align: left;
+		;
+		
+	}
+#roundbox
+	{
+		width: 960px;	
+		margin: 0px auto;
+    	text-align: left;
+		
+		background: #e8e8e8;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		margin-top: 30px;
+		position:relative;
+		margin-bottom: 20px;
+		
+		height: 600px;
+	}
+
+#button
+	{
+		margin-top: 365px;	
+		margin-left: 80px;
+		
+	}
+#content
+	{
+		margin-left: 80px;
+		width: 800px;
+		margin-top: 20px;	
+	}
+h2, p
+	{
+		
+		color: #2d2d2d;
+		
+		font-size: 14px;
+	}
+
+#roundbox img
+	{
+		display: block;
+		margin-left: 310px;
+		position:absolute;
+		top:60px;	
+	}
+
+
+#nav
+	{
+		margin-left: 310px;
+		position:absolute;
+		top: 30px;
+	}
+#nav li
+	{
+		float: left;
+		display:block;
+		margin-right: 30px;
+		paddin-top:30px;
+	
+		
+	}
+#nav li a
+	{
+		text-decoration:none;	
+	}
+p
+	{
+		position:absolute;
+		top:530px;
+		margin-left: 310px;
+		
+	} 
+#footer
+	{
+		height:50px;
+		width:960px;
+		clear:both;	
+	}
+.hide
+	{
+		display:none;	
+	}
+.show
+	{
+		display:block;	
+	}
+ul li a
+	{
+		text-decoration:none;
+		text-align:right;	
+	}
+
+#one, #two, #three 
+	{
+		position: absolute;
+		top: 60px;
+		margin-left:70px;
+	}
+a:link {color: #606060; }
+a:active {color: #606060; }
+a:visited {color: #606060; }
+a:hover {color: #2d2d2d; }
+
+#main li h2	
+	{
+		margin-bottom: 10px;	
+	}

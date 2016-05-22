@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+
+<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css" media="screen" />
+
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : { 
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-outer {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrapper">
+    	<h2 id="logo"><span>Identity Theft</span></h2>
+        <nav>
+            	<a href="index.html">Home</a>
+                <a href="scams.html">Identity Scam scenarios</a>
+                <a href="videos.html">Videos</a>
+                <a href="avoid.html"> Avoid Getting Scammed</a>
+            </nav>
+        <div id="everything">
+        	<h3 class="topping">You receive this email from your old buddy Brent. Choose whether you'll help him out or ignore the email</h3>
+            
+            <p><img src="images/email.jpg" alt="brent email" /></p>
+            <ul>
+		<li><a class="fancybox" href="#inline1">Sure I'll Help</a></li>
+		<li><a class="fancybox" href="#inline2">Ignore The Email</a></li>
+
+	</ul>
+
+	<div id="inline1" style="display: none; overflow:hidden;">
+		<h3>You get another email from Brent</h3>
+		<p>
+		<img src="images/email2.jpg" alt="yes" />	
+		</p>
+      
+       
+                  <ul>
+		<li><a class="fancybox" href="#inline4">Sure I'll Help, again</a></li>
+		<li><a class="fancybox" href="#inline3">Not this Time!</a></li>
+
+	</ul>
+     
+        
+        
+	</div>
+        	<div id="inline2" style="width:500px;display: none; overflow:hidden;">
+		<h3>Congrats!</h3>
+		<p>
+			You have avoided being scammed! You may not know this or not but this just happens to be a true story.
+            </p>
+            <p>
+            This is a real story. Brent's actual email account was hacked and some of his friends actually lost money to an email hacker. Here is the full article of what happened. <a href="http://www.ajc.com/news/hackers-find-new-ways-617000.html">Full Story</a>
+		</p>
+	</div>
+     	
+        <div id="inline3" style="width:500px;display: none; overflow:hidden;">
+		<h3>Not this time!</h3>
+		<p>
+			Fool me once shame on you fool me twice shame on me! This time the email hackers's intentions were clear and you were able to avoid losing any more money to them.</p>
+            <p>
+            This is a real story. Brent's actual email account was hacked and some of his friends actually lost money to an email hacker. Here is the full article of what happened. <a href="http://www.ajc.com/news/hackers-find-new-ways-617000.html">Full Story</a>
+		</p>
+	</div>
+    
+    <div id="inline4" style="width:500px;display: none; overflow:hidden;">
+		<h3>Fell for it again!</h3>
+		<p>
+			Yea it sounded convincing the first time but this time was too obvious. You've lost your hard earned money to hackers and there's no way of getting it back. Atleast you tried to help a friend :-/</p>
+            <p>
+           This is a real story. Brent's actual email account was hacked and some of his friends actually lost money to an email hacker. Here is the full article of what happened. <a href="http://www.ajc.com/news/hackers-find-new-ways-617000.html">Full Story</a>
+		</p>
+	</div>
+        </div>
+
+    </div>
+</body>
+</html>

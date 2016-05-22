@@ -31,6 +31,22 @@ h2{
 
 }
 
+#main-nav{
+  margin-bottom: 50px;
+
+  ul{
+
+    li{
+      a{
+        color: $white-text;
+        font-family: $lato;
+        font-size: 20px;
+      }
+
+    }
+  }
+}
+
 #overlay-nav{
   background-color: $header-color;
   opacity: 0.9;
@@ -72,24 +88,7 @@ h2{
 }
 
 #the-resume{
-  height: 100%;
   background-color: $white-text;
-  position: fixed;
-  right: 0px;
-  bottom:0;
-  width:100%;
-  z-index: 1;
-  right: -4000px;
-
-
-  .close-resume{
-    font-size: 50px;
-    color: $dark-blue;
-    position: absolute;
-    top: -15px;
-    left: 15px;
-
-  }
 
   p{
     margin-bottom: 0px;
@@ -142,6 +141,10 @@ h2{
   -o-background-size: cover;
   background-size: cover;
   background-color: $dark-blue;
+
+  #logo{
+    margin-bottom: 100px;
+  }
 
  #view-my-work a {
    font-family: $lato;
@@ -241,6 +244,15 @@ h2{
     }
 
 
+}
+
+#portfolio-section{
+  h2 a{
+    color: $white-text;
+  }
+  p{
+    color: $white-text;
+  }
 }
 
 #about-me-section{

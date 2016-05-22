@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Christian Barnard</title>
+    <link rel="stylesheet" href="css/foundation-flex.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fullPage.js-master/jquery.fullPage.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700italic,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="fullpage">
+    <div id="home-index-section" class="callout large section">
+        <div class=" column text-center align-center">
+            <h1>Christian & Chimére Barnard</h1>
+            <h1>09.10.2016</h1>
+        </div>
+    </div>
+    <div id="about-me-section" class=" section" >
+        <div id="the-bio" class="row align-center">
+            <div id="bio-content" class="small-12 medium-6 columns">
+                <h2>Our Story</h2>
+                <p>
+                    Christian worked overnight as a tech lead to support agents. One fateful night, December 22, 2014, a beautiful
+                    new woman in the office grabbed Christian's attention immediately. As he got to know Chimére, Christian realized that she was not only cute but smart,
+                    quirky and very loving. After she invited him to go to the Dominican Republic with a group of her friends, Christian decided to befriend Chimére
+                    and hang out with her every weekend; such has been the case since her birthday celebration in 2015. In fact, since then they've fallen in love and
+                    created spectacular memories together. Their magical adventures include attending beer festivals, quinching culinary cravings & bike pedaling
+                    in Seattle, pub hopping in Atlanta's L5P, hookah lounging in San Francisco, roller coaster riding in Orlando, slot machine exploration in Las Vegas
+                    and truly the list grows with each month.
+                </p>
+                <br>
+
+                <p>
+                    They are life travel partners. They are lovers. They are very best friends.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="section" id="contact-me-section">
+        <div class="row">
+            <div class="small-12 medium-6 columns">
+                <img src="img/proposal.JPG" height="600" width="600" alt="">
+            </div>
+            <div class="cmall-12 medium-6 columns">
+                <h2>Christian</h2>
+                <p>
+                    Christian is usually toting his laptop and typing away at some bit of code. Otherwise, catch him if you can -- he'll be
+                    riding his bike, which is his favorite pastime, cooking up something decadent or sneaking away to watch his favorite anime.
+                    He is a pretty laid back guy who knows how to work hard to play harder.
+                </p>
+
+                <h2>Chimére</h2>
+                <p>
+                    A creative professional, Chimére is likely hunting for vintage or antique furniture, painting / repurposing an interesting furniture
+                    piece or riding her bike, MRLY, on the bike lanes of Atlanta on any given weekend. She’s a certified unicorn trainer with a
+                    serious travel bug since she grew up in a military family. She delights in her curiosities and a good chat about branding and marketing.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div id="portfolio-section" class="section">
+        <div class="row align-center">
+            <h2 class="small-12 text-center" style="font-size: 70px" id="countdown"></h2>
+        </div>
+        <div class="row">
+            <div class="small-6 columns text-right">
+                <h2>Event Info</h2>
+            </div>
+            <div class="small-6 columns">
+                <div>
+                    <h3>Wahoo! Grill Decatur</h3>
+                    <p>737 Ralph McGill Blvd. NE, Atlanta, GA 30312</p>
+                    <p>Ceremony at 11 am
+                    <p>Reception at 2:30 pm</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div id="hamburger"><img src="img/hamburger.png" alt=""></div>
+<div id="overlay-nav" class="overlay" style="display: none;">
+    <div class="closebtn-holder">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+    </div>
+    <div class="align-left">
+        <div class="overlay-text">
+            <ul class="text-left">
+                <li><a class="overlay-link" href="#index">Home</a></li>
+                <li><a class="overlay-link" href="#about-me">Our Story</a></li>
+                <li><a class="overlay-link" href="#portfolio">Christian & Chimére</a></li>
+                <li><a class="overlay-link" href="#contact-me">Event Info</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
+<script src="js/jquery.countdown-2.1.0/jquery.countdown.js"></script>
+<script type="text/javascript">
+       $("#countdown").countdown("2016/09/10", function(event) {
+            $(this).text(
+                 event.strftime('%D days %H:%M:%S')
+            );
+        });
+    </script>
+
+<script type="text/javascript" src="js/christian.js"></script>
+</body>
+</html>

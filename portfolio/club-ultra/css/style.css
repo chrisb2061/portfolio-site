@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/bebasneue-webfont.eot');
+    src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue-webfont.woff') format('woff'),
+         url('fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('fonts/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.clear
+	{
+		clear:both	
+	}
+body
+	{
+		background: #080808;
+		color: #fff;	
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 16px;	
+	}
+
+#wrapper
+	{
+		width: 100%;
+		
+
+	}
+#backgroundwrapper
+	{
+		margin-top:200px;	
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+    	text-align: left;
+	}
+#logonnav #logo
+	{
+		background: url(imgs/Untitled-1.png) no-repeat;
+		width: 350px;
+		height: 150px;
+		margin-bottom:20px;	
+	}
+#logonnav #logo span
+	{
+		display:none;	
+	}
+
+#logonnav #topnav li
+	{
+		width: 159px;
+		text-decoration: none;
+		height: 50px;
+		background: url(imgs/liner2.png) repeat-x;
+		float: left;
+		
+	}
+.border
+	{
+		border-right: solid #000 1px;
+		height: 50pxl	
+	}
+#logonnav #topnav a
+	{
+		text-decoration: none;
+		display: block;
+		line-height: 50px;
+		font-family: BebasNeueRegular, Arial, Helvetica, sans-serif;
+		height:50px;
+		width:159px;
+		font-size: 20px;
+		text-align:center;
+	}
+	
+#topnav a:link {color: #fff; ; }
+#topnav a:active {color: #fff;  }
+#topnav a:visited {color: #fff;  }
+#topnav a:hover {color: #4f4e4e; background:url(imgs/linerw.png) repeat-x; }
+
+#topnav #status
+	{
+		color: #4f4e4e;
+		background:url(imgs/linerw.png) repeat-x;	
+	}
+
+#makeMeScrollable, #content
+	{
+		height: 400px;
+		
+		background: url(imgs/linerbox2.png) repeat-x;
+		margin-top: 20px;	
+	}
+.scrollableArea
+	{
+		overflow: hidden;
+		height: 400px;	
+	}
+		
+#makeMeScrollable div.scrollableArea img
+		{
+			
+			float: left;
+			padding: 20px 0px 20px 20px;
+			
+		}
+#left, #right, #middle
+{
+	float: left;
+	width:310px;
+	height: 300px;
+	background: url(imgs/linerbox.png) repeat-x;
+	margin-top:20px;
+	border: solid 1px #000;
+		
+}
+
+#left, #middle 
+	{
+		margin-right: 12px;	
+	}
+	
+#left h3, #right h3, #middle h3, #content h3
+	{
+		height: 50px;
+		width::300px;
+		background: url(imgs/tail-h3.jpg) repeat-x;
+		border-bottom: solid #000 2px;	
+		font-family: BebasNeueRegular, Arial, Helvetica, sans-serif;
+		color: #fff;
+		font-size: 20px;	
+	}
+#left h3 span, #right h3 span, #middle h3 span, #content h3 span, #sponsers h3
+	{
+		padding-top: 15px;
+		padding-left: 15px;
+		display: block;
+	}
+#sponsers h3
+{
+	font-family: BebasNeueRegular, Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 20px;	
+}
+
+#left ul li
+	{
+		float:left;
+		margin-bottom: 10px;
+			
+	}
+#right ul
+	{
+		padding-top: 15px;
+		padding-left: 15px;	
+	}
+#right ul li span
+	{
+		font-weight:bold;
+		color:#F7095D;
+		font-size:12px;
+		margin-right: 3px;	
+	}
+.imgmarg
+	{
+		margin-right: 20px;	
+	}
+#right img
+	{
+		display:block;
+		padding: 15px 15px 0px 15px;	
+	}
+#sponsers div
+	{
+		float: left;
+		width:310px;
+		background: #000;
+		border: solid 1px #000;
+		margin-top: 15px;
+		height: 150px;
+		
+		
+	}
+#sponsers div.imgs
+	{
+		margin-right: 12px;
+			
+	}
+
+#right p, #middle p, #left ul
+	{
+		padding: 15px 15px 0px 15px;	
+	}
+
+#middle p span
+	{
+		color:#F7095D;
+		font-size:12px;
+	}
+#middle p
+	{
+		font-size: 11px;	
+	}
+
+#content div
+	{
+		width: 400px;
+		float: left;
+		
+	}
+#cover, #dress, #intheclub
+	{
+		padding-top: 15px;
+		padding-left: 25px;	
+	}
+		
+#content #intheclub
+	{
+		margin-right: 110px;	
+	}
+#content #intheclub p
+	{
+		margin-bottom: 	20px;
+		
+
+		
+	}
+#content
+	{
+		color: #fff;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 16px;
+		
+	}
+#content  h4
+	{
+		margin-bottom: 10px;	
+		font-family: BebasNeueRegular, Arial, Helvetica, sans-serif;
+		color: #fff;
+		font-size: 20px;
+	}
+#content p span
+	{
+		font-weight:bold;
+			
+	}
+#social
+	{
+		margin-top: 30px;	
+	}
+#social a
+	{
+		display: block;
+		height:32px;
+		width:150px;
+		float: left;
+		margin-right: 15px;
+		padding-left:40px;
+		line-height: 30px;
+		color: #4f4e4e;
+		font-weight: bold;
+		text-decoration: none;
+		
+	}
+#social a span
+	{
+		color: #fff;	
+	}
+a.fb
+	{
+		background: url(imgs/facebook.png) no-repeat;
+			
+	}
+a.tw
+	{
+		background: url(imgs/twitter.png) no-repeat;	
+	}
+a.yt
+	{
+		background: url(imgs/youtube.png) no-repeat;	
+	}
+#footer
+	{
+		margin-top: 10px;	
+		margin-bottom: 100px;
+	}

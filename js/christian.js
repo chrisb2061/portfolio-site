@@ -13,26 +13,24 @@ $(document).ready(function() {
     var closeResume = $('.close-resume');
 
     function closeTheResume () {
-        console.log(bioButton);
         theResume.velocity({
             right:-4000
         }, 500);
     }
 
     $('#fullpage').fullpage({
-        anchors: ['index', 'about-me', 'portfolio', 'contact-me'],
+        anchors: ['index', 'about-me', 'resume', 'portfolio', 'contact-me'],
         menu: '#menu',
         scrollingSpeed: 1000,
         autoScrolling:false,
         onLeave: function(index, nextIndex, direction){
-            var leavingSection = $(this);
 
-            if(index == 2 && nextIndex == 1 && direction =='up'){
-                closeTheResume();
+            if(index == 1 && nextIndex == 2 && direction =='down'){
+                hamburger.show();
+            } else if(index == 2 && nextIndex == 1 && direction =='up'){
+                hamburger.hide();
             }
-            else if(index == 2 && nextIndex ==3 && direction == 'down'){
-                closeTheResume();
-            }
+
         }
 
     });
@@ -48,10 +46,6 @@ $(document).ready(function() {
 
     });
 
-    closeResume.click(function(){
-        event.preventDefault();
-        closeTheResume();
-    });
 
     hamburger.click(function(){
         overlayNav.show();

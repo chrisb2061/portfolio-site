@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link href="c/style.css" rel="stylesheet" type="text/css" />
+
+<title>Touch Stone Properties</title>
+
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		
+        <div id="navwrapper">
+        	<div id="navholder">
+                <div id="logo">
+                
+                </div>
+                
+                <ul id="nav1">
+                    <li><a href="index.html">Available Properties</a></li>
+                    <li>Past Developments</li>
+                 </ul>
+        	</div>
+        </div>
+        
+        <div id="headerwrapper">
+        
+        	<div id="headerimg">
+            
+            </div>
+            
+                    	<div id="roundbox">
+            		<h2><span>Our Properties</span></h2>
+            		<div id="map_canvas"></div>
+        
+                    <form>
+                        <fieldset>
+                            <input id="button" type="button" value="Near by schools" />
+                        </fieldset>
+                    </form>
+                     <div id="content">
+                     	These are the properties that are currently available for leasing. Click on the green houses to see details about the houses. Click on the button above to see schools close to the properties.
+                     
+                     </div>
+                     
+                        
+            </div>
+        
+        </div>
+        
+       
+        
+
+        
+        
+        
+        
+	</div>
+	
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script>    
+
+	var target = new google.maps.LatLng(33.958107, -84.335386);
+	
+
+	map = new google.maps.Map(document.getElementById('map_canvas'), {
+	  center: target,
+	  zoom: 9,
+	  mapTypeId: 'roadmap'
+	});
+	
+	
+
+
+	var layer = new google.maps.FusionTablesLayer({
+	  query: {
+	    select: 'Geocodable address',
+	    from: '1977196'
+	  },
+	  
+	  styles: [{
+  markerOptions: {
+    iconName: "ranger_station"
+  }
+
+}]
+});
+
+
+
+var layer2 = new google.maps.FusionTablesLayer({
+  query: {
+    select: 'Geocodable address',
+    from: '1903149'
+  },
+  
+  
+});
+
+
+
+
+document.getElementById('button').onclick=school;
+
+function school (){
+
+	layer2.setMap(map);
+
+}
+
+
+
+
+	layer.setMap(map);
+	
+	
+	</script>
+</body>
+</html>
+
