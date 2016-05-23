@@ -2,9 +2,7 @@
 
 $header-color: #161d24;
 $lato: 'Lato', sans-serif;
-$rockSalt: 'Rock Salt';
 $nothing: 'Nothing You Could Do';
-$laBelle: 'La Belle Aurore';
 $white-text: #f2f2f2;
 $lighter-white-text: #fafafa;
 $bg: #f2f2f2;
@@ -21,6 +19,11 @@ body{
   background-color: $white-text;
 }
 
+#main-navigation{
+  height: 50px;
+  background-color: $ivory;
+}
+
 h1{
   font-family: $nothing;
   font-weight: 400;
@@ -31,14 +34,19 @@ h1{
 }
 
 
+h2{
+  font-family: $nothing;
+  font-weight: 300;
+  color: $ivory;
+}
 
-
-p{
+h3{
   font-family: $lato;
   font-weight: 400;
-  color: $peach;
-  margin-bottom: 0px;
+  color: $ivory;
 }
+
+
 
 #hamburger{
   position: fixed;
@@ -100,17 +108,32 @@ p{
     margin-bottom: 100px;
   }
 
-  h2{
+  h2, h3{
     font-family: $lato;
-    font-weight: 300;
-    color: $ivory;
+  }
+  .ghost-button {
+    margin-top: 20px;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: $navy;
+    border: 1px solid $navy;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    
+    a{
+      color: $navy;
+      font-family: $lato;
+      font-size: 25px;
+      font-weight: 300;
+
+    }
   }
 
-  h3{
-    font-family: $lato;
-    font-weight: 400;
-    color: $ivory;
-  }
+
+
+
 
 
 }
@@ -145,14 +168,14 @@ p{
 }
 
 #about-us-section{
+
+
   position: relative;
+  background-color: $navy;
 
-  background-color: $dark-blue;
-
-
-
-  #section-two-header{
-    margin-bottom: 15px;
+  h3{
+    font-weight:300;
+    color: $blush;
   }
 
 
@@ -160,6 +183,29 @@ p{
   p{
     color: $white-text;
   }
+}
+
+#proposal-section{
+
+
+}
+
+
+.negative-space{
+  margin-bottom: -15px;
+}
+
+.margin-1{
+  margin-bottom: 18px;
+}
+.margin-2{
+  margin-bottom: 24px;
+}
+.margin-3{
+  margin-bottom: 30px;
+}
+.margin-4{
+  margin-bottom: 36px;
 }
 
 

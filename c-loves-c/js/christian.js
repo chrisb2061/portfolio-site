@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
 
     $('#fullpage').fullpage({
-        anchors: ['index', 'our-story', 'mr-and-mrs', 'proposal', 'event-info', 'rsvp-registry', 'atlanta'],
+        anchors: ['index', 'our-story', 'proposal', 'event-info', 'rsvp-registry', 'atlanta'],
         menu: '#menu',
         scrollingSpeed: 1000,
         autoScrolling:false,
